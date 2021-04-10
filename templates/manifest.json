@@ -1,7 +1,7 @@
 {
     "name": "ChaliceBlog",
     "short_name": "Blog",
-    "start_url": "/create",
+    "start_url": "create",
     "display": "standalone",
     "background_color": "#fdfdfd",
     "theme_color": "#db4938",

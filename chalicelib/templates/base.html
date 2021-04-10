@@ -31,7 +31,28 @@
     
     <!--JavaScript at end of body for optimized loading-->
     <script>
-      
+
+      function post_blog(){
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "/create_post", true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+
+        xhr.send(JSON.stringify({
+            "name": document.getElementById('first_name').value,
+            "content":document.getElementById('textarea1').value,
+            "image":document.getElementById('imgurl').value
+        }));
+        setTimeout(function(){
+          window.location = "/";
+        }, 2000);
+        
+
+      }
+
+        
+
+
         if ("serviceWorker" in navigator) {
           window.addEventListener("load", function() {
             navigator.serviceWorker

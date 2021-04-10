@@ -7,7 +7,7 @@
     <div class="card horizontal">
       <div class="card-stacked">
         <div class="card-content">
-            <form class="col s8">
+            <form class="col s8" id="frm_details" method="post">
                 <div class="row">
         
                     <div class="input-field col s12">
@@ -24,11 +24,11 @@
                 <div class="row">
         
                     <div class="input-field col s12">
-                        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                        <input placeholder="Placeholder" id="imgurl" type="text" class="validate">
                         <label for="image_url">URL</label>
                     </div>
                 </div>
-                <a class="waves-effect waves-light btn"><i class="material-icons left">post_add</i>Post</a>
+                <a class="waves-effect waves-light btn" onclick="post_blog()"><i class="material-icons left">post_add</i>Post</a>
 
             </form>
         </div>

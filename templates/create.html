@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="row s12">
+<div class="col s3"></div>
+  <div class="col s6">
+    <div class="card horizontal">
+      <div class="card-stacked">
+        <div class="card-content">
+            <form class="col s8">
+                <div class="row">
+        
+                    <div class="input-field col s12">
+                        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                        <label for="name">Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="content">Content</label>
+                    </div>
+                </div>
+                <div class="row">
+        
+                    <div class="input-field col s12">
+                        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                        <label for="image_url">URL</label>
+                    </div>
+                </div>
+                <a class="waves-effect waves-light btn"><i class="material-icons left">post_add</i>Post</a>
+
+            </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s2"></div>
+  </div>
+          
+  {% endblock %}

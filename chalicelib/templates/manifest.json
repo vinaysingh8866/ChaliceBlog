@@ -1,0 +1,20 @@
+{
+  "name": "ChaliceBlog",
+  "short_name": "Blog",
+  "start_url": "/api/",
+  "display": "standalone",
+  "background_color": "#fdfdfd",
+  "theme_color": "#db4938",
+  "orientation": "portrait-primary",
+  "icons": [
+    
+    {
+      "src": "https://via.placeholder.com/150",
+      "type": "image/png", "sizes": "192x192"
+    },
+    {
+      "src": "https://via.placeholder.com/512",
+      "type": "image/png", "sizes": "512x512"
+    }
+  ]
+}

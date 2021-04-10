@@ -1,12 +1,12 @@
-const staticDevCoffee = "dev-coffee-site-v1"
+const nbbb = "blog-site"
 const assets = [
-  "/",
-  "/create",
+  "/api",
+  "/api/create",
 ]
 
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
-    caches.open(staticDevCoffee).then(cache => {
+    caches.open(nbbb).then(cache => {
       cache.addAll(assets)
     })
   )
@@ -24,7 +24,7 @@ self.addEventListener("fetch", fetchEvent => {
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", function() {
       navigator.serviceWorker
-        .register("/serviceWorker.js")
+        .register("/api/service_w")
         .then(res => console.log("service worker registered"))
         .catch(err => console.log("service worker not registered", err))
     })
